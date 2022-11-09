@@ -140,12 +140,14 @@ i.fa-solid.fa-bars {
     }    
 }
 #about .container-ab{
-    padding-top: 08%;
+    padding-top: 04%;
+    padding-bottom: 03%;
     border-top: #000000 solid;
     border-bottom: solid #000000;
 }
 .container-ed {
     background-color: #8753e9;
-    padding-top: 08%;
+    padding-top: 04%;
+    padding-bottom: 03%;
     border-bottom: solid #000000;
 }
