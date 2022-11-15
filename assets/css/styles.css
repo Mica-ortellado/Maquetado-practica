@@ -140,7 +140,7 @@ i.fa-solid.fa-bars {
         display: inline-block;
     }    
 }
-#about .container-ab{
+.container-ab{
     padding-top: 04%;
     padding-bottom: 03%;
     border-top: #000000 solid;
@@ -150,5 +150,21 @@ i.fa-solid.fa-bars {
     background-color: #8753e9;
     padding-top: 04%;
     padding-bottom: 03%;
+    border-top: #000000 solid;
+    border-bottom: solid #000000;
+}
+
+.container-pr{
+    padding-top: 04%;
+    padding-bottom: 03%;
+    border-top: #000000 solid;
+    border-bottom: solid #000000;
+}
+
+.container-sk {
+    background-color: #8753e9;
+    padding-top: 04%;
+    padding-bottom: 03%;
+    border-top: #000000 solid;
     border-bottom: solid #000000;
 }
