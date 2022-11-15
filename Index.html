@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="assets/css/Index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/231b20608c.js" crossorigin="anonymous"></script>
@@ -18,32 +18,13 @@
 
   <!--Inicio Navbar-->
     <nav class="navbar navbar-expand-lg bg-dark sticky-top">
-      <!--Dropdown navbar-->
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="fa-solid fa-bars"></i>
-             </a>
-            </i>
-            <!--Dropdown menu-->
-              <ul class="dropdown-menu dropdown-menu-dark">
-                    <div id="list-example" class="list-group">
-                      <a class="list-group-item list-group-item-action" href="#about">Sobre mi</a>
-                      <a class="list-group-item list-group-item-action" href="#educacion">Skills</a>
-                      <a class="list-group-item list-group-item-action" href="#proyectos">Proyectos</a>
-                    </div>
-              </ul>
-            </li>
-          </ul>
-        </div>
         <!-- Navbar brand-->
-            <a class="navbar-brand" href="#">
-              <img src="assets/img/LogoAP.png" alt="" width="70%" height="auto">
+            <a class="navbar-brand col-3" href="#">
+              <img src="assets/img/logoAP.png" alt="" width="70%" height="auto">
             </a>
+            <div class="col-6"></div>
             <!--Redes-->
-          <ul class="list-group list-group-horizontal">
+          <ul class="list-group list-group-horizontal col-3">
             <li class="list-group-item">
               <i class="fa-brands fa-instagram fa-xxl">
                 <a href="https://www.instagram.com/michi.ortellado/" class="button stretched-link" target="_blank"></a>
@@ -59,41 +40,15 @@
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnXVKQGzBHjdbqXJrVFBwfhhLsxNPVJmTRbBsRfzDVnlNlLSzMjgBtgrtBhDRZjNJttVXG" class="button stretched-link" target="_blank"></a>
               </i>
            </li>
+           <!--Button log-out-->
+           <li class="list-group-item">
+            <i class="fa-solid fa-user-lock" type="button" class="btn"></i>
+           </li>
             <!-- Button trigger modal -->
             <li class="list-group-item">
-              <i class="fa-solid fa-user-pen" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              <i class="fa-solid fa-user-pen" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
             </li>
-          </ul>  
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-           <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-             <h1 class="modal-title fs-6" id="exampleModalLabel">Iniciar Sesion</h1>
-             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            <div class="modal-body">
-              <div class="mb-3 row">
-                <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
-               <div class="col-sm-10">
-                <input type="text" name="email" class="form-control" id="inputEmail" placeholder="hola@ejemplo.com" required>
-               </div>
-              </div>
-             <div class="mb-3 row">
-             <label for="inputPassword" class="col-sm-3 col-form-label">Contraseña</label>
-              <div class="col-sm-10">
-               <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Ingresar contraseña" required>
-              </div>
-             </div>
-            </div>
-             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-color">Continuar</button>
-             </div>
-            </div>
-           </div>
-          </div>
-      </div>
+          </ul>
     </nav>
 
     <!--Inicio perfil-->
@@ -102,10 +57,11 @@
         <div class="portada-perfil" style="background-image: url(assets/img/rosario.jpg);">
               <div class="sombra"></div>
                 <div class="avatar-perfil">
-                  <img src="assets/img/Sho.png" alt="MicaPerfil">
+                  <img src="assets/img/yo.png" alt="Micaela-foto">
                 </div>
             <div class="datos-perfil">
-              <p class="bio-usuario">21 años, madre. Buscando siempre el éxito</p>
+              <h2 class="nombre-usuario">Micaela Ortellado</h2>
+              <h4>Full stack Developer Jr.</h4>
             </div>
         </div>
       </div>
@@ -115,10 +71,7 @@
   <!--Sección sobre mi-->
   <section id="about">
     <div class="row container-ab">
-      <div class="col-3">
-        <h3 class="titulo-usuario text-center">Micaela Ortellado</h3>
-        <h4 class="text-center">Full stack Developer Jr.</h4>
-      </div>
+      <div class="col-3"></div>
        <div class="col-6 text-center">
         <h2> Sobre mi </h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor. </p>
@@ -150,6 +103,36 @@
       <div class="col-3"></div>
       </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+      <h1 class="modal-title fs-6" id="exampleModalLabel">Iniciar Sesion</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+     <div class="modal-body">
+       <div class="mb-3 row">
+         <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-10">
+         <input type="text" name="email" class="form-control" id="inputEmail" placeholder="hola@ejemplo.com" required>
+        </div>
+       </div>
+      <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-3 col-form-label">Contraseña</label>
+       <div class="col-sm-10">
+        <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Ingresar contraseña" required>
+       </div>
+      </div>
+     </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+       <button type="button" class="btn btn-color">Continuar</button>
+      </div>
+     </div>
+    </div>
+   </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
